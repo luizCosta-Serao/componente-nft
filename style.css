@@ -26,13 +26,15 @@ body {
   background-position: center;
   background-size: cover;
   border-radius: 1rem;
-  cursor: pointer;  
+  cursor: pointer; 
+  position: relative;
 }
 
 #view {
   position: absolute;
-  right: 355px;
-  top: 210px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   display: none;
   z-index: 1000;
 }
