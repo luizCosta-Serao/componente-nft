@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+}
+
+.nft-component {
+  max-width: 350px;
+  margin: 4rem auto;
+  padding: 1rem;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1rem;
+}
+
+.nft-image img{
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.nft-content h1 {
+  color: hsl(0, 0%, 100%);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.nft-content p {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  max-width: 300px;
+  color: hsl(214, 40%, 70%);
+  margin-bottom: 1rem;
+}
+
+.day-eth {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom:3rem ;
+}
+
+.nft-content .ethereum {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  color: hsl(178, 100%, 50%);
+}
+
+.nft-content .ethereum::before {
+  content: "";
+  background-image: url("./images/icon-ethereum.svg");
+  display: inline-block;
+  width: 11px;
+  height: 18px;
+  margin-right: .5rem;
+}
+
+.nft-content .days {
+  position: relative;
+  top: 3px;
+  color:hsl(214, 40%, 70%) ;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+}
+
+.nft-content .days::before {
+  content: "";
+  display: inline-block;
+  background-image: url("./images/icon-clock.svg");
+  width: 17px;
+  height: 17px;
+  position: relative;
+  top: 3px;
+  right: 8px;
+}
+
+.nft-content .avatar img {
+  width: 35px;
+  border-radius: 50%;
+  border: 1.5px solid hsl(0, 0%, 100%);
+  vertical-align: middle;
+  margin-right: .875rem;
+}
+
+.nft-content .avatar::before {
+  content: "";
+  display: block;
+  width: 315px;
+  height: 1px;
+  background-color: hsl(214, 40%, 70%);
+  position: relative;
+  top: -20px;
+}
+
+.nft-content .avatar .name {
+  font-family: 'Outfit', sans-serif;
+  color: hsl(0, 0%, 100%);
+}
